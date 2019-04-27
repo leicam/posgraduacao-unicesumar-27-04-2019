@@ -20,8 +20,8 @@ public class ProdutoService {
 	
 	@GET
 	@Path("/get")
-	@Produces("application/json/{id}")
-	public Produto getProdutoJSON(@PathParam("id")Long id) {
+	@Produces("application/json")
+	public Produto getProdutoJSON() {
 		Produto produto = new Produto();
 		produto.setNome("Moto X - Android");
 		produto.setQuantidade(10);
